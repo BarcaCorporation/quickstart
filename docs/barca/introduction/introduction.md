@@ -76,7 +76,7 @@ Barca é uma ferramenta que pode ser utilizada tanto em seu projeto particular d
 * Gerar Interfaces para seu projeto
 * Gerar tabelas/coleções para dados SQL & NoSQL
 * Gerar e personalizar Landing Pages
-* Implementar Banco de Dados: [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), [Microsoft SQLServer](https://www.microsoft.com/pt-br/sql-server/sql-server-2019), [Oracle DB](https://www.oracle.com/br/index.html), [MongoDB](https://www.mongodb.com/), [AWS DynamoDB](https://aws.amazon.com/pt/dynamodb/), [IBM DB2](https://www.ibm.com/products/db2-database/get-started)
+* Implementar Banco de Dados em projeto: [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), [Microsoft SQLServer](https://www.microsoft.com/pt-br/sql-server/sql-server-2019), [Oracle DB](https://www.oracle.com/br/index.html), [MongoDB](https://www.mongodb.com/), [AWS DynamoDB](https://aws.amazon.com/pt/dynamodb/), [IBM DB2](https://www.ibm.com/products/db2-database/get-started)
 * Documentar projeto
 * Publicar projeto
 
@@ -85,6 +85,71 @@ Barca é uma ferramenta que pode ser utilizada tanto em seu projeto particular d
 <br>
 <br>
 <br>
+
+# Serviços
+
+<br>
+<br>
+
+--- 
+- Servidores Web
+  - NGINX
+  - APACHE2
+  - LIGHTTPD
+  - CADDY
+  - IIS
+  - TRAEFIK
+
+- Sistemas de Gerenciamento de Banco de Dados
+  - MySQL
+  - PostgreSQL
+  - MariaDB
+  - Percona
+  - MSSQL
+  - MongoDB
+  - Neo4j
+  - CouchDB
+  - RethinkDB
+  - Cassandra
+
+- Aplicativos para Gerenciamento de Banco de Dados
+  - Adminer
+  - PhpMyAdmin
+  - PgAdmin
+  - DBeaver
+  - MySQL Workbench
+  - TablePlus
+  - HeidiSQL
+  - Sequel Pro
+
+- Mecanismo para Cache
+  - Varnish
+  - Redis
+  - Memcached 
+  - Aerospike 
+
+- Ferramentas de trabalho
+  - PHP CLI
+  - Composer
+  - Git 
+  - Vim 
+  - Linuxbrew 
+  - Node 
+  - Gulp 
+  - Npm 
+  - Yarn 
+  - Heroku CLI 
+  - Wordpress CLI 
+  - AWS CLI 
+  - MySQL Shell
+  - Mongo Shell
+  - Psql
+  - V8JS 
+  - Aerospike 
+---
+
+
+
 
 <!-- absolute path -->
 [Instalar Barca](/barca/install/so.md)<br>
