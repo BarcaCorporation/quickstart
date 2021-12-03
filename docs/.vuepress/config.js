@@ -6,7 +6,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#fff' }],
     // ...other tags
   ],
-  lang: 'en-US',
+  lang: 'pt-BR',
   title: `Barca CLI ${version}`,
   description: 'This is my first VuePress site',
   theme: '@vuepress/theme-default',
@@ -15,22 +15,41 @@ module.exports = {
   },
   locales: {
     '/': {
-      lang: 'pt-BR',
+      lang: 'Português-Brasileiro',
       title: 'Barca CLI',
       description: 'Gerador de Projetos'
     },
-    '/en/': {
-      lang: 'en-US',
+    '/it/': {
+      lang: 'Italiano',
       title: 'Barca CLI',
       description: 'Vue-powered Static Site Generator'
-    }
+    },
+    '/fr/': {
+      lang: 'Francês',
+      title: 'Barca CLI',
+      description: 'Vue-powered Static Site Generator'
+    },
+    '/en/': {
+      lang: 'Inglês',
+      title: 'Barca CLI',
+      description: 'Vue-powered Static Site Generator'
+    },
+    '/al/': {
+      lang: 'Alemão',
+      title: 'Barca CLI',
+      description: 'Vue-powered Static Site Generator'
+    },
+    '/jp/': {
+      lang: 'Japonês',
+      title: 'Barca CLI',
+      description: 'Vue-powered Static Site Generator'
+    },
   },
   plugins: [
     '@vuepress/back-to-top', 
     '@vuepress/medium-zoom', 
     '@vuepress/plugin-search',
     {
-      // allow searching the `tags` frontmatter
       getExtraFields: (page) => page.frontmatter.tags ?? [],
     },
     [
@@ -47,24 +66,95 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    docsRepo: 'https://github.com/project-barca/quickstart',
+    docsBranch: 'main',
     navbar: [
-      // NavbarItem
+      // DOCS
       {
-        text: 'Foo',
-        link: '/foo/',
+        text: 'Documentação',
+        children: [
+          {
+            text: 'Barca',
+            children: [
+              {text: 'Introdução', link: '/barca/introduction/introduction.html'},
+              {text: 'CLI', link: '/'},
+              {text: 'Cliente API', link: '/web/api/generate.html'},
+              {text: 'Desktop App', link: '/barca/install/generate.html'},
+            ]
+          },
+          {
+            text: 'Gerador',
+            children: [
+              {text: 'API', link: '/web/api/generate.html'},
+              {text: 'Blog', link: '/web/blog/generate.html'},
+              {text: 'Interfaces', link: '/web/interfaces/generate.html'},
+              {text: 'Servidor Web', link: '/infra/webserver/generate.html'},
+              {text: 'Infraestrutura', link: '/web/server/generate.html'},
+            ]
+          },
+          {
+            text: 'Referências',
+            children: [
+              {text: 'Base de Dados', link: '/'},
+              {text: 'Temas', link: '/'},
+              {text: 'Componentes', link: '/'},
+            ]
+          },
+        ],
       },
-      // NavbarGroup
+      // LICENSE
       {
-        text: 'Group',
-        children: ['/group/foo.md', '/group/bar.md'],
+        text: 'Licença',
+        link: '/barca/license',
       },
-      // string - page file path
-      '/bar/README.md',
+      // SUPORT
+      {
+        text: 'Suporte',
+        children: [
+          {
+            text: 'Social',
+            children: [
+              {text: 'Twitter', link: 'https://twitter.com/projetobarca'},
+              {text: 'Instagram', link: 'https://www.instagram.com/barca.project_br/'},
+              {text: 'Youtube', link: '/barca/install/generate.html'},
+              {text: 'Facebook', link: '/barca/install/generate.html'},
+              {text: 'LinkedIn', link: 'https://www.linkedin.com/company/barca-project/'},
+            ]
+          },
+          {
+            text: 'Contato',
+            children: [
+              {text: 'Discord', link: '/barca/introduction/introduction.html'},
+              {text: 'Line', link: '/'},
+              {text: 'Status', link: 'https://status.im/'},
+              {text: 'Telegram', link: '/barca/install/generate.html'},
+              {text: 'Viber', link: '/barca/install/generate.html'},
+            ]
+          },
+          {
+            text: 'Ajuda',
+            children: [
+              {text: 'Issues', link: 'https://github.com/project-barca/barca-cli/issues'},
+              {text: 'Pull Request CLI', link: 'https://github.com/project-barca/barca-cli/pulls'},
+              {text: 'Pull Request API', link: 'https://github.com/project-barca/barca-api/pulls'}
+            ]
+          },
+        ],
+      },
+      // VERSIONS
+      {
+        text: 'v0.2.x-beta',
+        children: ['v0.1.0'],
+        link: '/barca/versions/releases'
+      },
     ],
-    backToHome: 'voltar ao inicio',
+    backToHome: 'Voltar ao inicio',
     //logoDark: '/public/img/logo/logo.jpeg',
     locales: {
       '/': {
+        selectLanguageName: 'Português-Brasileiro',
+      },
+      '/en/': {
         selectLanguageName: 'English',
       },
       '/zh/': {
@@ -74,106 +164,103 @@ module.exports = {
     logo: 'https://vuejs.org/images/logo.png',
     logoDark: 'https://vuejs.org/images/logo.png',
     lastUpdated: false,
-    sidebar: [
-      {
-        title: 'Group 1',   // required
-        path: '/foo/',      // optional, which should be a absolute path.
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
-        children: [
-          '/guide/',
-          '/installation/',
-          '/advanced/',
+    sidebar: {
+      '/web/api': [
+        {
+          text: 'Criar uma API REST',
+          children: ['1.   Escolher servidor', '2.   Conectar ao Banco de Dados', '3.   Adicionar Modelos', '4.   Adicionar Controles', '5.   Adicionar Rotas', '6.   Autenticação', '7.   Deploy!'],
+        },
+        {
+          text: 'Banco de Dados',
+          children: ['Criar Modelos', 'Conexão', 'Variáveis de Ambiente', 'Queries'],
+        },
+        {
+          text: 'Controles',
+          children: ['Criar Recursos', 'Alterar', 'Excluír', 'Clonar'],
+        },
+        {
+          text: 'Rotas',
+          children: ['Nova Rota', 'Controllers em Rotas', 'Privilégios para Usuários', 'Dependências', 'Tradução'],
+        },
+        {
+          text: 'Autenticações',
+          children: ['JWT', 'Passport.js'],
+        },
+        {
+          text: 'Segurança na API',
+          children: ['Proxy', 'Ant-SQL Injection',],
+        },
+        {
+          text: 'Deploy',
+          children: ['Linux', 'MacOS', 'AWS', 'Google Cloud Platform', 'Heroku', 'Netlify', 'Github', 'OpenShift4', 'Windows'],
+        },
+      ],
+      '/environment/install': [
+        {
+          text: 'Ambiente',
+          children: ['Instalação no Windows', 'Instalação no Linux', 'Instalação no MacOS', 'Instalação com Docker', 'Instalação com Kubernets', 'Instalação com Vagrant'],
+        },
+      ],
+      '/': [
+        {
+          text: 'Introdução',
+          link: '/barca/introduction/introduction',
+          children: [
+            {
+              text: 'Instalação',
+              link: '/barca/install/so',
+              children: [
+                {text: 'Windows', link: '/barca/install/so.html#instalar-barca-no-windows'},
+                {text: 'Linux', link: '/barca/install/so.html#instalar-barca-no-linux'},
+                {text: 'MacOS', link: '/barca/install/so.html#instalar-barca-no-macos'},
+              ]
+            },
+            {
+              text: 'Versões',
+              link: '/barca/versions/releases.html',
+            },
+            {text: 'Contribuições', link: '/barca/contributors'},
+            {text: 'Patrocinadores', link: '/barca/sponsors'},
+            {text: 'Licença', link: '/barca/introduction/introduction.html#license'},
+          ],
+        },
+        {
+          text: 'Início Rápido',
+          children: [
+          {
+            text: 'Gerar API',
+            link: '/web/api/generate.html',
+            children: [
+              {text: 'Express.js', link: '/web/api/generate.html#api-com-express-js'},
+              {text: 'Laravel PHP', link: '/web/api/generate.html#api-com-laravel-php'},
+              {text: 'GO', link: '/web/api/generate.html#api-com-go-lang'},
+              {text: 'Rust', link: '/web/api/generate.html#api-com-rocket-rust'},
+              {text: 'Symfony', link: '/web/api/generate.html#api-com-symfony-php'},
+              {text: 'Spring', link: '/web/api/generate.html#api-com-spring-java'},
+              {text: 'Play', link: '/web/api/generate.html#api-com-play-java'},
+              {text: 'Django', link: '/web/api/generate.html#api-com-django-python'},
+              {text: 'Flask', link: '/web/api/generate.html#api-com-flask-python'},
+              {text: 'Bottle', link: '/web/api/generate.html#api-com-bottle-python'},
+            ],
+          },
+          {
+            text: 'Gerar Interfaces',
+            link: '/web/interfaces/generate.html',
+            children: [ 
+              {text: 'Angular.js', link: '/web/angular'}, 
+              {text: 'React.js', link: '/web/react'}, 
+              {text: 'Vue.js', link: '/web/vue'}
+            ],
+          },
+          {
+            text: 'Servidor',
+            link: '/machine/server',
+            children: [ {text: 'Linux', link: '/so/server/linux'}, {text: 'Windows', link: '/so/server/windows'}],
+          },
         ]
-      },
-      {
-        text: 'Requisitos',
-        link: 'requeriments',
-        children: [],
-      },
-      {
-        text: 'Início Rápido',
-        link: '/tutorial/',
-        children: [
-          // SidebarItem
-          {
-            text: 'Instalação',
-            link: 'install',
-            children: [],
-          },
-          {
-            text: 'Executando Barca',
-            link: 'exec/barca',
-            children: [],
-          },
-          {
-            text: 'Atualizações',
-            link: 'versions',
-            children: [],
-          },
-          {
-            text: 'Configuração',
-            link: 'settings',
-            children: [],
-          },
-          {
-            text: 'Soluções para problemas',
-            link: 'feeds',
-            children: [],
-          },
-          {
-            text: 'Repositórios do Projeto',
-            link: 'repos',
-            children: [],
-          },
-        ],
-      },
-      {
-        text: 'Seu Primeiro Aplicativo',
-        link: '/tutorial/',
-        children: [
-          // SidebarItem
-          {
-            text: 'Criar uma API REST',
-            link: '/api/create',
-            children: [],
-          },
-          {
-            text: 'Criar um Blog',
-            link: '/blog/create',
-            children: [],
-          },
-          {
-            text: 'Criar um Site',
-            link: '/site/create',
-            children: [],
-          },
-          {
-            text: 'Criar uma Loja Virtual',
-            link: '/ecommerce/create',
-            children: [],
-          },
-          {
-            text: 'Criar um App Desktop',
-            link: '/desktop/create',
-            children: [],
-          },
-          {
-            text: 'Criar uma Landing Page',
-            link: '/lp/create',
-            children: [],
-          },
-        ],
-      },
-      {
-        text: 'Crie seu App',
-        link: 'app',
-        children: [],
-      },
-      "Início Rápido",
-      "Configurações",
-      "Integrações",
-    ],
+        },
+      ],
+    },
     nav: [
       { text: "Home", link: "/" }
     ],
