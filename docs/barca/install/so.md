@@ -23,16 +23,16 @@ features:
 
 ---
 
-# Instalar Barca no Windows
+## Instalar Barca no Windows
 
 
-Olá, seja Bem-Vindo a instalação do Barca para **Desktop** & **CLI** no Windows. Preparamos os melhores conteúdos nesta página para você ficar por dentro dos requisitos necessários, link para download, manual de instalação e mais.
+Olá, seja Bem-Vindo a instalação do Barca para **Desktop** & **CLI** no Windows. Preparamos os melhores conteúdos nesta página para você ficar por dentro dos requisitos necessários, links para download, manual de instalação e outros.
 
 <br>
 <br>
 <br>
 
-## Instale Barca Desktop
+### Barca Desktop
 
 
 O Barca Desktop é um aplicativo para ambientes Linux, MacOS e Windows que ajuda você na geração de projetos, varreduras em vulnerabilidades, implementação de segurança e suporte de atualizações para ambientes.
@@ -41,7 +41,7 @@ O Barca Desktop é um aplicativo para ambientes Linux, MacOS e Windows que ajuda
 <br>
 <br>
 
-## Instale Barca CLI
+### Barca CLI
 
 Simplifique o gerenciamento de infraestruturas e projetos por linha de comando instalando o **Barca CLI** em sua máquina Windows.
 
@@ -66,7 +66,7 @@ Para
 
 <br>
 
-Caso você queira definir a variável `GOPATH` por linha de comando, basta abrir o Terminal em modo Administrativo e executar:
+Caso você queira definir a variável `GOPATH` por linha de comando, basta abrir o Terminal em modo Administrador e executar:
 
 <br>
 <br>
