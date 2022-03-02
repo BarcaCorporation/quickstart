@@ -1,13 +1,12 @@
 {
-  "name": "barca",
+  "name": "barca-quickstart",
   "version": "1.0.0",
-  "description": "GetStarted with Barca",
-  "main": "index.js",
+  "description": "Learn to use the barca project",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "author": "@ahsouza Aníbal Henrique De Souza <annibalhsouza@gmail.com>",
+  "author": "@ahsouza Aníbal Souza <annibalhsouza@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.3.0",
