@@ -124,6 +124,8 @@ Seu servidor será executado no endereço exibido em seu terminal
 
 <!-- relative path -->
 [Início](../../README.md)    
+[Adicionar Entidade](../api/add-domain.md#adicionar-entidade)  
+[Adicionar Função](../api/add-domain.md#adicionar-recurso)  
 [Adicionar Docker](../api/docker.md)  
 [Adicionar Segurança](../proj/security.md)  
 [Escanear Projeto](../proj/scan.md#api)  
