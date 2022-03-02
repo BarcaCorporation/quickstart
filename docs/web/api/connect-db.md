@@ -37,7 +37,7 @@ Configurando:
 Agora vamos digitar o comando abaixo para conectar:
 
 ```sh
-barca --user root --password 12345 --dbname "test" integrate <database> <diretorio>
+barca --host 127.0.0.1 --user root --password 12345 --dbname "test" integrate <database> <diretorio>
 ```
 
 <br>
