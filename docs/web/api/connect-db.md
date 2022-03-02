@@ -9,10 +9,17 @@ head:
   - - link
     - rel: canonical
       href: foobar
+
+prev:
+  text: Gerar sua primeira API
+  link: /web/api/generate.html
+next:
+  text: Adicionar Entidade
+  link: /web/api/add-domain.html#entidade
 ---
 
 
-# Ativar Database
+# Conectar Banco de Dados
 
 
 Para conectar sua API com um serviço de Banco de Dados é bem simples, vamos precisar de especificar algumas das opções abaixo:
