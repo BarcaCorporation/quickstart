@@ -8,7 +8,7 @@ module.exports = {
   ],
   lang: 'pt-BR',
   title: `Barca CLI ${version}`,
-  description: 'This is my first VuePress site',
+  description: 'This is documentation for the Barca CLI command line tool',
   theme: '@vuepress/theme-default',
   markdown: {
     lineNumbers: true
@@ -17,32 +17,32 @@ module.exports = {
     '/': {
       lang: 'Português-Brasileiro',
       title: 'Barca CLI',
-      description: 'Gerador de Projetos'
+      description: 'Ferramenta para criar e personalizar qualquer projeto'
     },
     '/it/': {
       lang: 'Italiano',
       title: 'Barca CLI',
-      description: 'Vue-powered Static Site Generator'
+      description: 'Strumento per creare e personalizzare qualsiasi progetto'
     },
     '/fr/': {
       lang: 'Francês',
       title: 'Barca CLI',
-      description: 'Vue-powered Static Site Generator'
+      description: "Outil pour créer et personnaliser n'importe quel projet"
     },
     '/en/': {
       lang: 'Inglês',
       title: 'Barca CLI',
-      description: 'Vue-powered Static Site Generator'
+      description: 'Tool to create and customize any project'
     },
     '/al/': {
       lang: 'Alemão',
       title: 'Barca CLI',
-      description: 'Vue-powered Static Site Generator'
+      description: 'Tool zum Erstellen und Anpassen von Projekten'
     },
     '/jp/': {
       lang: 'Japonês',
       title: 'Barca CLI',
-      description: 'Vue-powered Static Site Generator'
+      description: 'プロジェクトを作成およびカスタマイズするためのツール'
     },
   },
   plugins: [
