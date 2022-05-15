@@ -5,3 +5,7 @@ No momento, estamos trabalhando neste conteúdo, aguarde até que tudo esteja fi
 
  [saiba como contribuir](https://opensource.guide/)
 :::
+
+<br>
+
+[Project Barca GitHub](https://github.com/project-barca)
