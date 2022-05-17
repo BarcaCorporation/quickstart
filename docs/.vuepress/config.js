@@ -164,11 +164,29 @@ module.exports = {
     logo: 'https://vuejs.org/images/logo.png',
     logoDark: 'https://vuejs.org/images/logo.png',
     lastUpdated: false,
+
+
+
+
+
+
+
     sidebar: {
       '/web/api': [
         {
-          text: 'Criar uma API REST',
-          children: ['1.   Escolher servidor', '2.   Conectar ao Banco de Dados', '3.   Adicionar Modelos', '4.   Adicionar Controles', '5.   Adicionar Rotas', '6.   Autenticação', '7.   Deploy!'],
+          text: 'Crie sua API REST',
+          children: [
+            {
+              text: 'Arquitetura',
+              children: [
+                {text: 'Client Server', link: '/web/api/architecture.html#client-server-architecture'},
+                {text: 'Event Driven', link: '/web/api/architecture.html#event-driven-architecture'},
+                {text: 'Model View Controller', link: '/web/api/architecture.html#model-view-controller-architecture'},
+                {text: 'Microservice', link: '/web/api/architecture.html#microservice-architecture'},
+                {text: 'Pipe and Filter', link: '/web/api/architecture.html#pipe-and-filter-architecture'},
+              ]
+            },
+          ],
         },
         {
           text: 'Banco de Dados',
