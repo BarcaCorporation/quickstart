@@ -186,6 +186,24 @@ module.exports = {
                 {text: 'Pipe and Filter', link: '/web/api/architecture.html#pipe-and-filter-architecture'},
               ]
             },
+            {
+              text: 'Linguagem',
+              children: [
+                {text: 'C/C++', link: '/web/api/frameworks.html#cplusplus'},
+                {text: 'C#', link: '/web/api/frameworks.html#csharp'},
+                {text: 'GO', link: '/web/api/frameworks.html#golang'},
+                {text: 'JAVA', link: '/web/api/frameworks.html#java'},
+                {text: 'Kotlin', link: '/web/api/frameworks.html#kotlin'},
+                {text: 'JavaScript', link: '/web/api/frameworks.html#javascript'},
+                {text: 'Python', link: '/web/api/frameworks.html#python'},
+                {text: 'PHP', link: '/web/api/frameworks.html#php'},
+                {text: 'Rust', link: '/web/api/frameworks.html#rust'},
+                {text: 'Swift', link: '/web/api/frameworks.html#swift'},
+                {text: 'Scala', link: '/web/api/frameworks.html#scala'},
+                {text: 'Swift', link: '/web/api/frameworks.html#swift'},
+                {text: 'TypeScript', link: '/web/api/frameworks.html#typescript'},
+              ]
+            },
           ],
         },
         {
