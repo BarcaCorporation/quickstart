@@ -1,7 +1,7 @@
 ---
 lang: pt-BR
-title: Conectar ao Banco de Dados
-description: Conectando com serviços de Banco de Dados
+title: Scan Project
+description: Scan Project
 head:
   - - meta
     - name: foo
@@ -12,51 +12,11 @@ head:
 ---
 
 
-# Fazer Varredura no Projeto
+# Barca CLI
 
+::: tip Working on this content
+No momento, estamos trabalhando neste conteúdo, aguarde até que tudo esteja finalizado. Você pode participar em contribuir para o projeto
 
-Para conectar sua API com um serviço de Banco de Dados é bem simples, vamos precisar de especificar algumas das opções abaixo:
+ [saiba como contribuir](https://opensource.guide/)
+:::
 
----
-Configurando:
-  - **--user**: | especificar o usuário
-  - **--password**: | específicar porta para o servidor de escutar
-  - **--dbname**: | definir tradução de linguagem
----
-
-<br>
-<br>
-
-Agora vamos digitar o comando abaixo para conectar:
-
-```sh
-barca --user root --password 12345 --dbname "test" integrate <database> <diretorio>
-```
-
-<br>
-<br>
-Pronto!
-<br>
-Seu projeto adquiriu conexão
-
-<br>
-<br>
-
-
-
-
-
-
-<!-- relative path -->
-[Home](../README.md)  
-[Config Reference](../reference/config.md)  
-[Getting Started](./getting-started.md)  
-<!-- absolute path -->
-[Guide](/guide/README.md)  
-[Config Reference > markdown.links](/reference/config.md#links)  
-<!-- URL -->
-[GitHub](https://github.com)  
-
-
-
-[[toc]]
