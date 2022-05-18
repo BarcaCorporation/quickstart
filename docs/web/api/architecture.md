@@ -1,3 +1,20 @@
+---
+lang: pt-BR
+title: Arquitetura de Softwares
+description: Personalize a arquitetura para sua API
+head:
+  - - meta
+    - name: foo
+      content: bar
+  - - link
+    - rel: canonical
+      href: foobar
+next:
+  text: Frameworks
+  link: /web/api/docker.html
+---
+
+
 # Barca CLI
 
 ::: tip Working on this content
