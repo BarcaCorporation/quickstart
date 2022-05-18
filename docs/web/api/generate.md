@@ -87,8 +87,6 @@ Seu servidor será executado no endereço exibido em seu terminal
 ---
 
 <br>
-<br>
-<br>
 
 ## API com Flask Python
 
@@ -96,8 +94,6 @@ Seu servidor será executado no endereço exibido em seu terminal
 
 ---
 
-<br>
-<br>
 <br>
 
 
@@ -108,8 +104,6 @@ Seu servidor será executado no endereço exibido em seu terminal
 ---
 
 <br>
-<br>
-<br>
 
 ## API com Symfony PHP
 
@@ -118,8 +112,21 @@ Seu servidor será executado no endereço exibido em seu terminal
 ---
 
 <br>
-<br>
-<br>
+
+## API com Gorilla GO
+
+## API com Bottle Python
+
+## API com Gin GO
+
+## API com Beego GO
+## API com Fiber GO
+
+## API com Echo GO
+
+## API com Cake PHP
+
+## API com Laravel PHP
 
 
 <!-- relative path -->
